@@ -85,7 +85,9 @@ def readFile(file_name):
     with open(file_name, 'r', encoding='utf-8') as data:
         f_reader = DictReader(data)
         return list(f_reader)
+
 def copyData(source_filename, destination_filename, row_number):
+
     # Проверяем, существует ли файл-источник
     if not path.exists(source_filename):
         print("Файл-источник не существует.")
